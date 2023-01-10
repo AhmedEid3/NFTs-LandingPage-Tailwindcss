@@ -14,6 +14,7 @@ module.exports = {
         primary: "#141943",
         secondary: "#2F80ED",
         accent: "#6A58F1",
+        danger: "#FF0000",
         "green-light": "#70FF00",
       },
       borderRadius: {
