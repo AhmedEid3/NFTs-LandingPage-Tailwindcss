@@ -20,8 +20,8 @@
 
   <body class="bg-primary">
     <!-- Navbar -->
-    <nav class="container flex items-center px-4 pt-6 pb-10 md:px-0 2xl:px-8">
-      <a class="mr-auto block">
+    <nav class="mx-3 flex items-center pt-6 sm:mx-6">
+      <a href="#" class="mr-auto block max-w-[120px] sm:max-w-none">
         <img src="./images/logo.svg" alt="logo" />
       </a>
 
@@ -40,7 +40,7 @@
         </li>
       </ul>
 
-      <div class="py-1 px-3">
+      <div class="hidden py-1 px-1 sm:block">
         <button class="btn btn-primary">connect wallet</button>
       </div>
 
@@ -53,37 +53,43 @@
     <!-- End Navbar -->
 
     <!-- Overview -->
-    <section class="container my-10 2xl:px-8">
+    <section class="container my-8 sm:my-12 md:my-16 lg:my-20">
       <div class="flex flex-wrap justify-between">
-        <div class="">
-          <h2 class="mb-11 font-clash text-7xl capitalize">
+        <div class="w-full">
+          <h2
+            class="mb-5 text-center font-clash text-4xl capitalize sm:text-left sm:text-7xl md:mb-11"
+          >
             <span class="block">Discover</span>
             <span class="block">collect, & sell</span>
             <span class="gredint-text block font-semibold"> Extraordinary</span>
             <span>NFTs</span>
           </h2>
 
-          <p class="max-w-sm text-sm font-light capitalize">
+          <p
+            class="text-center text-sm font-light capitalize sm:max-w-sm sm:text-left"
+          >
             the leading NFT Marketplace on EthereumHome to the next generation
             of digital creators.Discover the best NFT collections.
           </p>
 
-          <div class="my-10">
+          <div
+            class="my-4 flex justify-center sm:my-6 sm:justify-start md:my-8 lg:my-10"
+          >
             <button class="btn btn-primary mr-2">explore</button>
             <button class="btn btn-secondary ml-2">create</button>
           </div>
 
           <!-- snapshots -->
-          <div class="flex">
-            <div class="mr-8 text-center">
+          <div class="flex justify-center sm:justify-start">
+            <div class="px-4 text-center">
               <h6 class="font-clash text-2xl font-medium">432K+</h6>
               <span class="text-xs font-light">Collections</span>
             </div>
-            <div class="mr-8 text-center">
+            <div class="px-4 text-center">
               <h6 class="font-clash text-2xl font-medium">200K+</h6>
               <span class="text-xs font-light">Artists</span>
             </div>
-            <div class="mr-8 text-center">
+            <div class="px-4 text-center">
               <h6 class="font-clash text-2xl font-medium">10K+</h6>
               <span class="text-xs font-light">Community</span>
             </div>
@@ -91,7 +97,7 @@
           <!-- snapshots -->
         </div>
 
-        <div class="relative">
+        <!-- <div class="relative">
           <div
             class="bg-blur-black box absolute left-8 z-0 mx-auto h-60 w-80 max-w-sm -skew-x-12"
           ></div>
@@ -179,13 +185,13 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- End Overview -->
 
     <!-- Sponsors -->
-    <section class="container my-20 2xl:px-8">
+    <section class="container my-8 sm:my-12 md:my-16 lg:my-20">
       <div class="flex flex-wrap items-center justify-center">
         <div class="mx-12 my-3 max-w-[11rem]">
           <img class="h-auto max-w-full" src="./images/metamask.png" />
@@ -216,24 +222,24 @@
     <!-- End Sponsors -->
 
     <!-- Trending NFTs -->
-    <section class="my-20">
+    <section class="relative my-20">
       <h2 class="heading-section">Trending NFTs</h2>
+
+      <!-- Left Arrow -->
+      <div
+        class="absolute top-0 left-0 z-10 hidden h-full w-24 cursor-pointer items-center justify-center backdrop-blur-sm md:flex"
+      >
+        <div
+          class="h-10 w-10 rounded-[50%] border border-gray-500 bg-black text-center text-3xl leading-[1.3] transition duration-300 ease-in-out hover:bg-white hover:text-secondary"
+        >
+          &lt;
+        </div>
+      </div>
 
       <!-- cards -->
       <div class="relative flex flex-1 justify-center overflow-auto">
-        <!-- Left Arrow -->
-        <div
-          class="absolute top-0 left-0 z-10 flex h-full w-24 cursor-pointer items-center justify-center backdrop-blur-sm"
-        >
-          <div
-            class="h-10 w-10 rounded-[50%] border border-gray-500 bg-black text-center text-3xl leading-[1.3] transition duration-300 ease-in-out hover:bg-white hover:text-secondary"
-          >
-            &lt;
-          </div>
-        </div>
-
         <!-- Card #0 -->
-        <div class="gradient-border mx-2 w-96 max-w-sm rounded-lg p-4">
+        <div class="gradient-border mx-2 min-w-[280px] rounded-lg p-4">
           <div><img src="./images/nft-0.png" alt="" /></div>
 
           <!-- Sub-Card -->
@@ -281,7 +287,7 @@
         <!-- Card #0 -->
 
         <!-- Card #1 -->
-        <div class="gradient-border mx-2 w-96 max-w-sm rounded-lg p-4">
+        <div class="gradient-border mx-2 min-w-[280px] rounded-lg p-4">
           <div><img src="./images/nft-1.png" alt="" /></div>
 
           <!-- Sub-Card -->
@@ -329,7 +335,7 @@
         <!-- Card #1 -->
 
         <!-- Card #2 -->
-        <div class="gradient-border mx-2 w-96 max-w-sm rounded-lg p-4">
+        <div class="gradient-border mx-2 min-w-[280px] rounded-lg p-4">
           <div><img src="./images/nft-2.png" alt="" /></div>
 
           <!-- Sub-Card -->
@@ -377,7 +383,7 @@
         <!-- Card #2 -->
 
         <!-- Card #3 -->
-        <div class="gradient-border mx-2 w-96 max-w-sm rounded-lg p-4">
+        <div class="gradient-border mx-2 min-w-[280px] rounded-lg p-4">
           <div><img src="./images/nft-3.png" alt="" /></div>
 
           <!-- Sub-Card -->
@@ -425,7 +431,7 @@
         <!-- Card #3 -->
 
         <!-- Card  #4 -->
-        <div class="gradient-border mx-2 w-96 max-w-sm rounded-lg p-4">
+        <div class="gradient-border mx-2 min-w-[280px] rounded-lg p-4">
           <div><img src="./images/nft-4.png" alt="" /></div>
 
           <!-- Sub-Card -->
@@ -471,19 +477,19 @@
           </div>
         </div>
         <!-- Card #4 -->
-
-        <!-- Right Arrow -->
-        <div
-          class="absolute top-0 right-0 flex h-full w-24 cursor-pointer items-center justify-center backdrop-blur-sm"
-        >
-          <div
-            class="h-10 w-10 rounded-[50%] border border-gray-500 bg-black text-center text-3xl leading-[1.3] transition duration-300 ease-in-out hover:bg-white hover:text-secondary"
-          >
-            &gt;
-          </div>
-        </div>
       </div>
       <!-- cards -->
+
+      <!-- Right Arrow -->
+      <div
+        class="absolute top-0 right-0 hidden h-full w-24 cursor-pointer items-center justify-center backdrop-blur-sm md:flex"
+      >
+        <div
+          class="h-10 w-10 rounded-[50%] border border-gray-500 bg-black text-center text-3xl leading-[1.3] transition duration-300 ease-in-out hover:bg-white hover:text-secondary"
+        >
+          &gt;
+        </div>
+      </div>
 
       <div class="my-16 flex justify-center">
         <button class="btn btn-secondary">see more</button>
@@ -492,11 +498,11 @@
     <!-- End Trending NFTs -->
 
     <!-- Top Collections -->
-    <section class="container my-20 2xl:px-8">
+    <section class="container my-8 sm:my-12 md:my-16 lg:my-20">
       <h2 class="heading-section">Top Collections</h2>
 
       <!-- Filter -->
-      <div class="flex">
+      <div class="flex flex-wrap">
         <div class="chip chip-active"><span>art</span></div>
         <div class="chip">
           <span>Collectibles</span>
@@ -512,10 +518,12 @@
       </div>
       <!-- Filter -->
 
-      <div class="mt-8">
-        <div class="flex flex-wrap justify-around">
+      <div class="mt-4 sm:mt-8">
+        <div class="flex flex-wrap justify-evenly">
           <!-- Card #01 -->
-          <div class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2">
+          <div
+            class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2 sm:m-4"
+          >
             <div class="mb-2">
               <img class="h-auto w-full" src="./images/img_01.png" />
             </div>
@@ -539,7 +547,9 @@
           <!-- Card #01 -->
 
           <!-- Card #02 -->
-          <div class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2">
+          <div
+            class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2 sm:m-4"
+          >
             <div class="mb-2">
               <img class="h-auto w-full" src="./images/img_02.png" />
             </div>
@@ -563,7 +573,9 @@
           <!-- Card #02 -->
 
           <!-- Card #03 -->
-          <div class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2">
+          <div
+            class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2 sm:m-4"
+          >
             <div class="mb-2">
               <img class="h-auto w-full" src="./images/img_03.png" />
             </div>
@@ -587,7 +599,9 @@
           <!-- Card #03 -->
 
           <!-- Card #04 -->
-          <div class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2">
+          <div
+            class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2 sm:m-4"
+          >
             <div class="mb-2">
               <img class="h-auto w-full" src="./images/img_04.png" />
             </div>
@@ -613,7 +627,9 @@
           <!-- Card #04 -->
 
           <!-- Card #05 -->
-          <div class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2">
+          <div
+            class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2 sm:m-4"
+          >
             <div class="mb-2">
               <img class="h-auto w-full" src="./images/img_05.png" />
             </div>
@@ -637,7 +653,9 @@
           <!-- Card #05 -->
 
           <!-- Card #06 -->
-          <div class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2">
+          <div
+            class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2 sm:m-4"
+          >
             <div class="mb-2">
               <img class="h-auto w-full" src="./images/img_06.png" />
             </div>
@@ -661,7 +679,9 @@
           <!-- Card #06 -->
 
           <!-- Card #07 -->
-          <div class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2">
+          <div
+            class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2 sm:m-4"
+          >
             <div class="mb-2">
               <img class="h-auto w-full" src="./images/img_07.png" />
             </div>
@@ -685,7 +705,9 @@
           <!-- Card #07 -->
 
           <!-- Card #08 -->
-          <div class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2">
+          <div
+            class="m-2 max-w-[280px] rounded-2xl border border-gray-400 p-2 sm:m-4"
+          >
             <div class="mb-2">
               <img class="h-auto w-full" src="./images/img_08.png" />
             </div>
@@ -719,23 +741,14 @@
     <!-- End Top Collections -->
 
     <!-- Top Categories -->
-    <section class="container my-20 2xl:px-8">
+    <section class="container my-8 sm:my-12 md:my-16 lg:my-20">
       <h2 class="heading-section">Top Categories</h2>
 
       <!-- cards -->
-      <div class="relative flex justify-center">
-        <!-- Left Arrow -->
-        <div class="absolute top-0 -left-3 z-10 flex h-full items-center">
-          <div
-            class="h-10 w-10 cursor-pointer rounded-[50%] border border-gray-500 bg-black text-center text-3xl leading-[1.3] transition duration-300 ease-in-out hover:bg-white hover:text-secondary"
-          >
-            &lt;
-          </div>
-        </div>
-
+      <div class="flex flex-wrap justify-center">
         <!-- Card #1 -->
         <div
-          class="m-2 flex-1 rounded-2xl border border-gray-400 bg-white bg-opacity-5 p-3 backdrop-blur-sm"
+          class="m-2 min-w-[280px] max-w-xs flex-1 rounded-2xl border border-gray-400 bg-white bg-opacity-5 p-3 backdrop-blur-sm"
         >
           <div class="flex">
             <div>
@@ -753,7 +766,7 @@
 
         <!-- Card #2-->
         <div
-          class="m-2 flex-1 rounded-2xl border border-gray-400 bg-white bg-opacity-5 p-3 backdrop-blur-sm"
+          class="m-2 min-w-[280px] max-w-xs flex-1 rounded-2xl border border-gray-400 bg-white bg-opacity-5 p-3 backdrop-blur-sm"
         >
           <div class="flex">
             <div>
@@ -771,7 +784,7 @@
 
         <!-- Card #3 -->
         <div
-          class="m-2 flex-1 rounded-2xl border border-gray-400 bg-white bg-opacity-5 p-3 backdrop-blur-sm"
+          class="m-2 min-w-[280px] max-w-xs flex-1 rounded-2xl border border-gray-400 bg-white bg-opacity-5 p-3 backdrop-blur-sm"
         >
           <div class="flex">
             <div>
@@ -788,15 +801,6 @@
           </p>
         </div>
         <!-- Card #3 -->
-
-        <!-- Right Arrow -->
-        <div class="absolute top-0 -right-3 flex h-full items-center">
-          <div
-            class="h-10 w-10 cursor-pointer rounded-[50%] border border-gray-500 bg-black text-center text-3xl leading-[1.3] transition duration-300 ease-in-out hover:bg-white hover:text-secondary"
-          >
-            &gt;
-          </div>
-        </div>
       </div>
 
       <div class="my-8 flex justify-center">
@@ -806,75 +810,89 @@
     <!-- End Top Categories -->
 
     <!-- Create and sell your NFTs -->
-    <section
-      class="container my-10 rounded-2xl border border-gray-500 bg-white bg-opacity-5 pb-16 backdrop-blur-sm 2xl:px-8"
-    >
-      <h2 class="heading-section my-16">Create and sell your NFTs</h2>
+    <section class="container my-8 sm:my-12 md:my-16 lg:my-20">
+      <div
+        class="container rounded-2xl border border-gray-500 bg-white bg-opacity-5 pb-16 backdrop-blur-sm"
+      >
+        <h2 class="heading-section my-8 sm:my-12 md:my-16">
+          Create and sell your NFTs
+        </h2>
 
-      <div class="flex justify-evenly">
-        <!-- Card #1 -->
-        <div class="m-2 flex max-w-[220] flex-1 flex-col items-center p-2">
-          <div class="my-4 h-12 w-12">
-            <img
-              class="h-auto max-w-full"
-              src="./images/wallet-icon.svg"
-              alt=""
-            />
+        <div class="flex flex-wrap justify-evenly">
+          <!-- Card #1 -->
+          <div
+            class="m-2 flex min-w-[180px] max-w-[220px] flex-1 flex-col items-center p-2"
+          >
+            <div class="my-2 h-12 w-12 sm:my-4">
+              <img
+                class="h-auto max-w-full"
+                src="./images/wallet-icon.svg"
+                alt=""
+              />
+            </div>
+            <h4 class="my-2 text-center text-xl font-medium sm:my-4">
+              Set up your wallet
+            </h4>
+            <p class="my-2 text-center text-sm font-light sm:my-4">
+              Once you’ve set up your wallet of choice, connect it to OpenSea by
+              clicking the wallet icon in the top right corner. Learn about the
+              wallets we support.
+            </p>
           </div>
-          <h4 class="my-4 text-center text-xl font-medium">
-            Set up your wallet
-          </h4>
-          <p class="my-4 text-center text-sm font-light">
-            Once you’ve set up your wallet of choice, connect it to OpenSea by
-            clicking the wallet icon in the top right corner. Learn about the
-            wallets we support.
-          </p>
-        </div>
-        <!-- Card #1 -->
+          <!-- Card #1 -->
 
-        <!-- Card #2 -->
-        <div class="m-2 flex max-w-[220] flex-1 flex-col items-center p-2">
-          <div class="my-4 h-12 w-12">
-            <img class="h-auto max-w-full" src="./images/upload.png" alt="" />
+          <!-- Card #2 -->
+          <div
+            class="m-2 flex min-w-[180px] max-w-[220px] flex-1 flex-col items-center p-2"
+          >
+            <div class="my-2 h-12 w-12 sm:my-4">
+              <img class="h-auto max-w-full" src="./images/upload.png" alt="" />
+            </div>
+            <h4 class="my-2 text-center text-xl font-medium sm:my-4">
+              Upload & Create Collection
+            </h4>
+            <p class="my-2 text-center text-sm font-light sm:my-4">
+              Upload your work then Click My Collections and set up your
+              collection. Add social links, a description, profile & banner
+              images, and set a secondary sales fee.
+            </p>
           </div>
-          <h4 class="my-4 text-center text-xl font-medium">
-            Upload & Create Collection
-          </h4>
-          <p class="my-4 text-center text-sm font-light">
-            Upload your work then Click My Collections and set up your
-            collection. Add social links, a description, profile & banner
-            images, and set a secondary sales fee.
-          </p>
-        </div>
-        <!-- Card #2 -->
+          <!-- Card #2 -->
 
-        <!-- Card #3 -->
-        <div class="m-2 flex max-w-[220] flex-1 flex-col items-center p-2">
-          <div class="my-4 h-12 w-12">
-            <img class="h-auto max-w-full" src="./images/bookmark.png" alt="" />
+          <!-- Card #3 -->
+          <div
+            class="m-2 flex min-w-[180px] max-w-[220px] flex-1 flex-col items-center p-2"
+          >
+            <div class="my-2 h-12 w-12 sm:my-4">
+              <img
+                class="h-auto max-w-full"
+                src="./images/bookmark.png"
+                alt=""
+              />
+            </div>
+            <h4 class="my-2 text-center text-xl font-medium sm:my-4">
+              List them for sale
+            </h4>
+            <p class="my-2 text-center text-sm font-light sm:my-4">
+              Choose between auctions, fixed-price listings, and declining-price
+              listings. You choose how you want to sell your NFTs, and we help
+              you sell them
+            </p>
           </div>
-          <h4 class="my-4 text-center text-xl font-medium">
-            List them for sale
-          </h4>
-          <p class="my-4 text-center text-sm font-light">
-            Choose between auctions, fixed-price listings, and declining-price
-            listings. You choose how you want to sell your NFTs, and we help you
-            sell them
-          </p>
+          <!-- Card #3 -->
         </div>
-        <!-- Card #3 -->
       </div>
     </section>
     <!-- End Create and sell your NFTs -->
 
     <!-- Articles -->
-    <section class="container my-20 2xl:px-8">
+    <section class="container my-8 sm:my-12 md:my-16 lg:my-20">
       <h2 class="heading-section">Articles</h2>
 
-      <div class="flex">
+      <div class="flex flex-wrap">
         <!-- Card #1 -->
         <div
-          class="m-2 flex-1 rounded-2xl border border-gray-600 bg-white bg-opacity-10 backdrop-blur-sm"
+          class="m-2 min-w-[200px] flex-1 rounded-2xl border border-gray-600 bg-white bg-opacity-10 backdrop-blur-sm"
         >
           <div>
             <img
@@ -898,7 +916,7 @@
 
         <!-- Card #2 -->
         <div
-          class="m-2 flex-1 rounded-2xl border border-gray-600 bg-white bg-opacity-10 backdrop-blur-sm"
+          class="m-2 min-w-[200px] flex-1 rounded-2xl border border-gray-600 bg-white bg-opacity-10 backdrop-blur-sm"
         >
           <div>
             <img
@@ -920,7 +938,7 @@
 
         <!-- Card #3 -->
         <div
-          class="m-2 flex-1 rounded-2xl border border-gray-600 bg-white bg-opacity-10 backdrop-blur-sm"
+          class="m-2 min-w-[200px] flex-1 rounded-2xl border border-gray-600 bg-white bg-opacity-10 backdrop-blur-sm"
         >
           <div>
             <img
@@ -948,10 +966,14 @@
     <!-- End Articles -->
 
     <!-- Footer -->
-    <footer class="mt-20 mb-4 bg-primary pt-20 2xl:px-8">
+    <footer
+      class="mt-8 mb-4 bg-primary pt-10 sm:mt-12 sm:pt-20 md:mt-16 lg:mt-20"
+    >
       <div class="container">
         <section class="flex flex-col items-center justify-center">
-          <h2 class="mb-10 text-center font-clash text-5xl font-medium">
+          <h2
+            class="mb-6 text-center font-clash text-3xl font-medium sm:mb-10 sm:text-5xl"
+          >
             Get More Updates
           </h2>
 
@@ -976,12 +998,12 @@
           </div>
         </section>
 
-        <div class="my-24 block">
+        <div class="my-12 block sm:my-24">
           <hr />
         </div>
 
-        <div class="flex justify-between">
-          <div class="flex-1">
+        <div class="flex flex-wrap justify-between">
+          <div class="m-2 flex-1">
             <div>
               <div class="mb-4 max-w-[120px]">
                 <img
@@ -991,7 +1013,7 @@
                 />
               </div>
 
-              <p class="mb-6 text-sm font-light">
+              <p class="mb-4 text-sm font-light sm:mb-6">
                 the leading NFT Marketplace on EthereumHome to the next
                 generation of digital creators.Discover the best NFT
                 collections.
@@ -1084,9 +1106,10 @@
               </ul>
             </div>
           </div>
-          <div class="flex-1"></div>
 
-          <div class="flex-1">
+          <div class="hidden sm:flex-1"></div>
+
+          <div class="m-2 flex-1">
             <div>
               <h5 class="text-xl font-medium">Marketplace</h5>
               <ul>
@@ -1113,7 +1136,8 @@
               </ul>
             </div>
           </div>
-          <div class="flex-1">
+
+          <div class="m-2 flex-1">
             <div>
               <h5>Links</h5>
               <ul>
@@ -1140,7 +1164,7 @@
           </div>
         </div>
 
-        <div class="mt-16">
+        <div class="mt-12 sm:mt-16">
           <a
             href="#"
             class="block text-center text-sm font-light hover:underline"
