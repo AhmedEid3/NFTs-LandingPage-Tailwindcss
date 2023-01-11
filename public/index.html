@@ -55,7 +55,7 @@
     <!-- Overview -->
     <section class="container my-8 sm:my-12 md:my-16 lg:my-20">
       <div class="flex flex-wrap justify-between">
-        <div class="w-full">
+        <div class="w-full sm:w-auto">
           <h2
             class="mb-5 text-center font-clash text-4xl capitalize sm:text-left sm:text-7xl md:mb-11"
           >
@@ -97,9 +97,9 @@
           <!-- snapshots -->
         </div>
 
-        <!-- <div class="relative">
+        <div class="relative mt-6 hidden min-h-[470px] sm:block">
           <div
-            class="bg-blur-black box absolute left-8 z-0 mx-auto h-60 w-80 max-w-sm -skew-x-12"
+            class="bg-blur-black box absolute left-8 z-0 mx-auto h-60 w-60 max-w-sm -skew-x-[10deg] sm:w-80"
           ></div>
 
           <div class="relative top-4 left-1 z-20">
@@ -110,20 +110,20 @@
                 alt="header"
               />
 
-              <div class="absolute -top-2 right-1 -skew-x-12">
-                <div class="bg-blur-black box px-4 py-2">
-                  <h6 class="font-clash font-bold">BID NOW!</h6>
-                  <span class="font-clash text-xs">Latest Collection</span>
+              <div class="absolute -top-2 right-2 -skew-x-[10deg]">
+                <div class="bg-blur-white box px-4 py-2">
+                  <h6 class="font-clash font-bold leading-none">BID NOW!</h6>
+                  <div class="font-clash text-[0.6rem]">Latest Collection</div>
                 </div>
               </div>
 
               <div
-                class="bg-blur-white box absolute right-2 bottom-20 flex -skew-x-12 items-center px-2 py-1 pr-10"
+                class="bg-blur-white box absolute right-2 bottom-20 flex -skew-x-[10deg] items-center px-2 py-1 pr-10"
               >
-                <div class="mr-1 h-11 w-11">
+                <div class="mr-1 h-11 w-11 rounded">
                   <img
-                    class="h-full w-full"
-                    src="./images/avatar_1.png"
+                    class="h-full w-full rounded"
+                    src="./images/dashes.png"
                     alt=""
                   />
                 </div>
@@ -136,15 +136,21 @@
               </div>
 
               <div
-                class="bg-blur-black box absolute -left-6 bottom-0 flex -skew-x-12 justify-between py-2 px-4"
+                class="bg-blur-white box absolute -left-6 bottom-0 flex -skew-x-[10deg] justify-between py-2 px-4"
               >
                 <div>
-                  <h6 class="font-clash text-lg font-medium">5.758 ETH</h6>
-                  <span class="font-clash text-xs">Latest Bid</span>
+                  <h6 class="font-clash text-lg font-medium leading-none">
+                    5.758 ETH
+                  </h6>
+                  <span class="font-clash text-xs leading-none"
+                    >Latest Bid</span
+                  >
                 </div>
                 <div class="ml-11">
-                  <h6 class="font-clash text-lg font-medium">$5758.31</h6>
-                  <span class="font-clash text-xs text-green-light"
+                  <h6 class="font-clash text-lg font-medium leading-none">
+                    $5758.31
+                  </h6>
+                  <span class="font-clash text-xs leading-none text-green-light"
                     >+12.45%</span
                   >
                 </div>
@@ -153,39 +159,41 @@
           </div>
 
           <div
-            class="bg-blur-black box absolute top-[72px] left-20 z-10 mx-auto min-h-[435px] w-96 max-w-md -skew-x-12 p-6"
+            class="bg-blur-black box absolute top-[52px] left-20 z-10 mx-auto min-h-[435px] -skew-x-[10deg] p-6 sm:min-w-[320px]"
           >
-            <div class="absolute -bottom-6 -left-6 z-20 rounded-2xl">
+            <div class="absolute -bottom-3 -left-6 z-20 rounded-2xl">
               <div class="bg-blur-black box py-1 px-4">
-                <h6 class="font-clash text-lg font-medium">Auction</h6>
-                <span class="font-clash text-xs">End In</span>
+                <h6 class="font-clash text-lg font-medium leading-none">
+                  Auction
+                </h6>
+                <span class="font-clash text-xs leading-none">End In</span>
               </div>
             </div>
 
             <div
-              class="bg-blur-black box absolute -bottom-9 -right-9 z-20 flex w-full max-w-xs justify-around p-3 text-center"
+              class="bg-blur-black box absolute -bottom-8 -right-9 z-20 flex w-full max-w-[250px] justify-around p-3 text-center"
             >
               <div>
                 <h6 class="font-clash text-lg font-medium">17</h6>
-                <span class="font-clash text-xs">Hours</span>
+                <p class="font-clash text-xs">Hours</p>
               </div>
 
               <div>:</div>
 
               <div>
                 <h6 class="font-clash text-lg font-medium">56</h6>
-                <span class="font-clash text-xs">Minutes</span>
+                <p class="font-clash text-xs">Minutes</p>
               </div>
 
               <div>:</div>
 
               <div>
                 <h6 class="font-clash text-lg font-medium">03</h6>
-                <span class="font-clash text-xs">Seconds</span>
+                <p class="font-clash text-xs">Seconds</p>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </section>
     <!-- End Overview -->
