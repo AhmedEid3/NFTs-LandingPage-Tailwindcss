@@ -16,6 +16,9 @@ module.exports = {
         accent: "#6A58F1",
         danger: "#FF0000",
         "green-light": "#70FF00",
+        "cyan-light": "#69eacb",
+        "primary-light": "#eaccf8",
+        "primary-medium": "#402475",
       },
       borderRadius: {
         "8xl": "4rem",
@@ -23,7 +26,7 @@ module.exports = {
 
       fontFamily: {
         clash: "Clash Display",
-        Poppins: "Poppins",
+        poppins: "Poppins",
       },
     },
   },

@@ -2,108 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.cdnfonts.com/css/clash-display");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap");
-
 @layer base {
   body {
-    background-image: url("../images/bg.jpg");
-    color: #ffffff;
-    font-family: "Poppins";
+    @apply bg-[url('../images/bg.jpg')] font-poppins text-white;
   }
 }
 
 @layer components {
   .nav-link {
-    @apply text-sm block py-1 px-3 mx-1 capitalize rounded-8xl hover:text-secondary hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 hover:bg-white;
+    @apply mx-1 block rounded-8xl py-1 px-3 text-sm capitalize transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-secondary;
   }
 
   .btn-base {
-    @apply text-sm capitalize rounded-8xl py-2 px-3;
+    @apply rounded-8xl py-2 px-3 text-sm capitalize;
   }
-
   .btn {
-    @apply btn-base hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300;
-    min-width: 8rem;
+    @apply btn-base min-w-[8rem] transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110;
   }
   .btn-lg {
-    @apply text-lg py-3 px-5;
-    min-width: 12rem;
+    @apply min-w-[12rem] py-3 px-5 text-lg;
   }
   .btn-full {
-    width: 100%;
+    @apply w-full;
   }
   .btn-primary {
     @apply bg-secondary hover:bg-white hover:text-secondary;
   }
   .btn-secondary {
-    @apply bg-transparent border-white border;
+    @apply border border-white bg-transparent;
   }
 
   .chip {
-    @apply px-8 py-2 mx-2 border rounded-3xl text-sm capitalize hover:border-transparent hover:scale-110 transition ease-in-out duration-300 cursor-pointer  hover:bg-secondary;
+    @apply mx-2 cursor-pointer rounded-3xl border px-8 py-2 text-sm capitalize transition duration-300 ease-in-out hover:scale-110 hover:border-transparent  hover:bg-secondary;
   }
-
   .chip-active {
-    @apply bg-secondary hover:scale-100 border-transparent;
+    @apply border-transparent bg-secondary hover:scale-100;
   }
 
   .menu-icon {
-    @apply w-6 bg-white block my-1;
-    height: 2px;
+    @apply my-1 block h-[2px] w-6 bg-white;
+  }
+
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-cyan-light via-primary-light to-accent;
   }
 
   .gredint-text {
-    background-image: linear-gradient(to right, #69eacb, #eaccf8, #6654f1);
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    @apply bg-gradient-primary bg-clip-text text-transparent;
   }
 
-  .card-gradient {
-    position: relative;
-    color: #fff;
-    background: #402475;
-    background-clip: padding-box; /* !importanté */
-    border: solid 2px transparent; /* !importanté */
-    border-radius: 200px;
+  .gradient-border {
+    @apply relative border-2 border-transparent bg-primary-medium bg-clip-padding text-white;
   }
-
-  .card-gradient:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -2px;
-    border-radius: inherit; /* !importanté */
-    background: linear-gradient(to right, #69eacb, #eaccf8, #6654f1);
+  .gradient-border:before {
+    @apply bg-gradient-primary absolute top-0 left-0 right-0 bottom-0 -z-10 -m-[2px] rounded-[inherit] content-[""];
   }
 
   .bg-blur-white {
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.25);
+    @apply bg-white bg-opacity-25 backdrop-blur-sm;
   }
 
   .bg-blur-black {
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.25);
+    @apply bg-black bg-opacity-25 backdrop-blur-sm;
   }
 
   .box {
     @apply rounded-xl border border-gray-500;
   }
 
-  .max-w-285 {
-    max-width: 11rem;
-  }
-
   .heading-section {
-    @apply font-clash font-medium text-5xl gredint-text text-center mb-10;
+    @apply gredint-text mb-10 text-center font-clash text-5xl font-medium;
   }
 }
